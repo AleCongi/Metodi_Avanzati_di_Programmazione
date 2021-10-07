@@ -34,7 +34,7 @@ Nella pagina "Modules", ci saranno le cartelle:<p>
 
 ![Moduli](res/img/moduli.png)<p>
 
-__Per ogni cartella__, bisognerà aggiungere il file .jar nella lista di moduli da esportare, checkarli come nell'immagine (mantenendo lo scope "Compile") e applicare le modifiche.<p>
+__Per la cartella "SERVER"__, bisognerà aggiungere il file .jar nella lista di moduli da esportare, checkarli come nell'immagine (mantenendo lo scope "Compile") e applicare le modifiche.<p>
 
 A questo punto abbiamo terminato.<p>
 
