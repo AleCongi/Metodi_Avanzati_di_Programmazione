@@ -25,6 +25,7 @@ public class MultiServer {
         try {
             while (true) {
                 Socket socket = s.accept();
+                System.out.println("client connesso");
                 try {
                     new ServerOneClient(socket);
                 } catch (IOException e) {

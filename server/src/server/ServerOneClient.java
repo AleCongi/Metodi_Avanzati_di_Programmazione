@@ -42,7 +42,6 @@ public class ServerOneClient extends Thread {
                     FrequentPatternMiner fpMiner = null;
 
                     String s = null;
-
                     if (opzione == 1) {
 
                         try {
@@ -143,9 +142,10 @@ public class ServerOneClient extends Thread {
                     e.printStackTrace();
                 }
             }
-        }
-        catch(IOException | NoValueException | DatabaseConnectionException e) {
-            e.printStackTrace();
+        } catch(IOException | NoValueException | DatabaseConnectionException e) {
+
+            System.out.println("client disconnesso");
+
         } finally {
             try{
                 socket.close();
