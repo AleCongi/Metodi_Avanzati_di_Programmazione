@@ -2,7 +2,9 @@ package mining;
 
 import data.*;
 
-class DiscreteItem extends Item {
+import java.io.Serializable;
+
+class DiscreteItem extends Item implements Serializable {
 
         public DiscreteItem(DiscreteAttribute attribute, String value) {
             super(attribute,value);

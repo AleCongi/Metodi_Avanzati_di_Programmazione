@@ -1,6 +1,8 @@
 package mining;
 
-public class EmergingPattern extends FrequentPattern {
+import java.io.Serializable;
+
+public class EmergingPattern extends FrequentPattern implements Serializable {
 
     private float growrate;
 
