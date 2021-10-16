@@ -23,10 +23,12 @@ public class Data {
 	 * @uml.associationEnd  multiplicity="(0 -1)"
 	 */
 	private List<Attribute> attributeSet=new LinkedList<Attribute>();
-	
 
-	
 
+	/**
+	 * @param tableName stringa rappresentante il nome
+	 * costruttore di data
+	 */
 	public Data (String tableName) throws DatabaseConnectionException, SQLException, NoValueException {
 		// open db connection
 	
@@ -87,28 +89,44 @@ public class Data {
 	
 	
 	/**
-	 * @return
+	 * restituisce il numberOfExamples
 	 * @uml.property  name="numberOfExamples"
 	 */
 	public int getNumberOfExamples(){
 		return numberOfExamples;
 	}
-	
+
+
+	/**
+	 * restituisce un intero indicante la dimenesione dell' attributeSet
+	 */
 	public int getNumberOfAttributes(){
 		return attributeSet.size();
 	}
-	
-	
-	
+
+
+	/**
+	 * @param exampleIndex intero indicande l'exampleIndex
+	 * @param attributeIndex intero indicante l'attributeIndex
+	 * restituisce l'oggetto che si trova nella posizione [exampleIndex][attributeSet.get(attributeIndex).getIndex()]
+	 */
 	public Object getAttributeValue(int exampleIndex, int attributeIndex){
 		return data[exampleIndex][attributeSet.get(attributeIndex).getIndex()];
 	}
-	
+
+
+	/**
+	 * @param index intero indicante l'indice
+	 * restituisce l'attributo in posizione index di attributeSet
+	 */
 	public Attribute getAttribute(int index){
 		return attributeSet.get(index);
 	}
-	
-	
+
+
+	/**
+	 *
+	 */
 	public String toString(){
 		String value="";
 		for(int i=0;i<numberOfExamples;i++){

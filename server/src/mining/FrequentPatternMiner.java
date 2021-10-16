@@ -12,6 +12,12 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
 
     private List<FrequentPattern> outputFP = new LinkedList<FrequentPattern>();
 
+    /**
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
+     * @param data oggetto di tipo data
+     * @param minSup valore reale indicante il minSup
+     * costruttore del FrequentPatternMiner
+     */
     public FrequentPatternMiner(Data data, float minSup) throws EmptySetException{
         Queue<FrequentPattern> fpQueue = new Queue();
 
@@ -72,6 +78,14 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
         } else throw new EmptySetException();
     }
 
+    /**
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
+     * @param data oggetto di tipo data
+     * @param minSup valore reale indicante il minSup
+     * @param fpQueue coda di FrequentPattern
+     * @param outputFP Lista
+     * restituisce una lista dopo aver espanso i frequent patterns
+     */
     private List expandFrequentPatterns(Data data, float minSup, Queue<FrequentPattern> fpQueue, List outputFP) throws EmptyQueueException {
         if (fpQueue.isEmpty()) {
             throw new EmptyQueueException();
@@ -127,16 +141,30 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
         }
     }
 
+    /**
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
+     * @param FP oggetto di tipo FrequentPattern
+     * @param item oggetto di tipo Item
+     * restituisce un frequentPattern ridefinito
+     */
     protected FrequentPattern refineFrequentPattern(FrequentPattern FP,Item item){
         FrequentPattern temp = new FrequentPattern(FP);
         temp.addItem(item);
         return temp;
     }
 
+    /**
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
+     * @restituisce l'outputFP
+     */
     public List getOutputFP() {
         return outputFP;
     }
 
+
+    /**
+     *
+     */
     public String toString() {
         String output = "Frequent patterns\n";
         int i = 0;
@@ -150,12 +178,20 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
         return output;
     }
 
+    /**
+     * iteratore
+     */
     @Override
     public Iterator<FrequentPattern> iterator() {
         return null;
     }
 
 
+    /**
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
+     * @param nomeFile stringa indicante il nome del file
+     * permette di memorizzare su file l'oggetto di tipo FrequentPatternMiner così da permettere la serializzazione
+     */
     public void salva(String nomeFile) throws FileNotFoundException, IOException {      // serializza l’oggetto riferito da this nel file il cui nome è passato come parametro
         FileOutputStream file = new FileOutputStream(nomeFile + ".dat");
         ObjectOutputStream outStream = new ObjectOutputStream(file);
@@ -163,6 +199,11 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
 
     }
 
+    /**
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
+     * @param nomeFile stringa indicante il nome del file
+     * permette di caricare da file l'oggetto FrequentPatternMiner
+     */
     public static FrequentPatternMiner carica(String nomeFile) throws FileNotFoundException,IOException,ClassNotFoundException{    //si occupa di leggere e restituire l’oggetto come è memorizzato nel file il cui nome è passato come parametro.
         FileInputStream inFile = new FileInputStream(nomeFile + ".dat");
         ObjectInputStream inStream = new ObjectInputStream(inFile);

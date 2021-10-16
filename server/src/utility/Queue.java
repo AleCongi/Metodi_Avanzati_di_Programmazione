@@ -21,8 +21,11 @@ public class Queue<T> implements Serializable {
 				this.next = null;
 			}
 		}
-		
 
+
+	/**
+	 * verifica se la coda è vuota e restituisce true. Altrimenti FALSE.
+	 */
 		 public boolean isEmpty() {
 			return this.begin == null;
 		}
@@ -37,10 +40,17 @@ public class Queue<T> implements Serializable {
 		}
 
 
+	/**
+	 * restituisce il primo oggetto
+	 */
 	public Object first(){
 			return this.begin.e;
 		}
 
+
+	/**
+	 *
+	 */
 	public void dequeue(){
 			if(this.begin==this.end){
 				if(this.begin==null)

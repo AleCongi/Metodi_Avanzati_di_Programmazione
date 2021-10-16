@@ -16,7 +16,13 @@ public class ServerOneClient extends Thread {
     private ObjectOutputStream out;             //flusso di oggetti in output dal server al client.
 
 
-    protected ServerOneClient(Socket s) throws IOException {      //Costruttore. Inizia il membro this.socket con il parametro in input al costruttore. Inizializza in e out, avvia il thread invocando il metodo start() (ereditato da Thread).
+    /**
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
+     * @param s oggetto di tipo socket
+     * costruttore. Inizia il membro this.socket con il parametro in input al costruttore. Inizializza in e out, avvia
+     * il thread invocando il metodo start() (ereditato da Thread)
+     */
+    protected ServerOneClient(Socket s) throws IOException {
         socket = s;
         in = new ObjectInputStream((socket.getInputStream()));
         out = new ObjectOutputStream(socket.getOutputStream());
@@ -24,7 +30,13 @@ public class ServerOneClient extends Thread {
     }
 
 
-    public void run() {                         //Ridefinisce il metodo run della classe Thread (variazione funzionale). Gestisce le richieste del client (apprendere pattern/regole e popolare con queste archive; salvare archive in un file, avvalorare archive con oggetto serializzato nel file)
+    /**
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
+     * Ridefinisce il metodo run della classe Thread (variazione funzionale). Gestisce le richieste del client
+     * (apprendere pattern/regole e popolare con queste archive; salvare archive in un file, avvalorare archive con
+     * oggetto serializzato nel file)
+     */
+    public void run() {
 
         try {
             while (true) {
