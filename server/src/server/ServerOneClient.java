@@ -16,7 +16,7 @@ public class ServerOneClient extends Thread {
     private ObjectOutputStream out;             //flusso di oggetti in output dal server al client.
 
 
-    ServerOneClient(Socket s) throws IOException {      //Costruttore. Inizia il membro this.socket con il parametro in input al costruttore. Inizializza in e out, avvia il thread invocando il metodo start() (ereditato da Thread).
+    protected ServerOneClient(Socket s) throws IOException {      //Costruttore. Inizia il membro this.socket con il parametro in input al costruttore. Inizializza in e out, avvia il thread invocando il metodo start() (ereditato da Thread).
         socket = s;
         in = new ObjectInputStream((socket.getInputStream()));
         out = new ObjectOutputStream(socket.getOutputStream());

@@ -12,11 +12,11 @@ public class Interval implements Serializable {
         this.sup=sup;
     }
 
-    public void setInf(float inf){
+    protected void setInf(float inf){
         this.inf=inf;
     }
 
-    public void setSup(float sup){
+    protected void setSup(float sup){
         this.sup=sup;
     }
 
@@ -28,7 +28,7 @@ public class Interval implements Serializable {
         return sup;
     }
 
-    public boolean checkValueInclusion(float value){
+    protected boolean checkValueInclusion(float value){
         return(value>=this.inf && value<this.sup);
     }
 

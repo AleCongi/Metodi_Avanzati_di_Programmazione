@@ -43,7 +43,7 @@ public class FrequentPattern implements Iterable<Item>, Comparable<FrequentPatte
 
 
 	//aggiunge un nuovo item al pattern
-	void addItem(Item item)
+	protected void addItem(Item item)
 	{
 		fp.add(item);
 
@@ -53,7 +53,7 @@ public class FrequentPattern implements Iterable<Item>, Comparable<FrequentPatte
 		return fp.get(index);
 	}
 
-	 public float getSupport(){
+	public float getSupport(){
 		 return support;
 	 }
 
@@ -81,7 +81,7 @@ public class FrequentPattern implements Iterable<Item>, Comparable<FrequentPatte
 	}
 
 	// Aggiorna il supporto
-		 float computeSupport(Data data){
+		 protected float computeSupport(Data data){
 			int suppCount=0;
 			// indice esempio
 			for(int i=0;i<data.getNumberOfExamples();i++){
@@ -126,7 +126,7 @@ public class FrequentPattern implements Iterable<Item>, Comparable<FrequentPatte
 			
 		}
 
-	 public void setSupport(float support) {
+	 protected void setSupport(float support) {
 		 this.support = support;
 	 }
 

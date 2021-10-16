@@ -8,7 +8,7 @@ public class EmergingPattern extends FrequentPattern implements Serializable {
 
     //METODI
 
-    public EmergingPattern(FrequentPattern fp,float growrate){
+    protected EmergingPattern(FrequentPattern fp,float growrate){
         super(fp);
         setGrowrate(growrate);
     }
@@ -17,14 +17,12 @@ public class EmergingPattern extends FrequentPattern implements Serializable {
         return growrate;
     }
 
-    public void setGrowrate(float growrate) {
+    protected void setGrowrate(float growrate) {
         this.growrate = growrate;
     }
 
     public String toString(){
     return (super.toString() + " " + "["+growrate+"]");
     }
-
-
 
 }

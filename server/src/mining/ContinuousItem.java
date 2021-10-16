@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 public class ContinuousItem extends Item implements Serializable {
 
-    public ContinuousItem(ContinuousAttribute attribute, Interval value) {
+    protected ContinuousItem(ContinuousAttribute attribute, Interval value) {
         super(attribute, value);
     }
 

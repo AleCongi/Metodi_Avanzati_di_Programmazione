@@ -126,7 +126,8 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
             return outputFP;
         }
     }
-     FrequentPattern refineFrequentPattern(FrequentPattern FP,Item item){
+
+    protected FrequentPattern refineFrequentPattern(FrequentPattern FP,Item item){
         FrequentPattern temp = new FrequentPattern(FP);
         temp.addItem(item);
         return temp;
@@ -153,7 +154,6 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
     public Iterator<FrequentPattern> iterator() {
         return null;
     }
-
 
 
     public void salva(String nomeFile) throws FileNotFoundException, IOException {      // serializza l’oggetto riferito da this nel file il cui nome è passato come parametro

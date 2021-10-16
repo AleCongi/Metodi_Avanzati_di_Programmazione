@@ -6,7 +6,7 @@ public abstract class Attribute implements Serializable {
     private String name;
     private int index;
 
-    public Attribute(String name, int index) {
+    protected Attribute(String name, int index){
         this.name = name;
         this.index = index;
     }

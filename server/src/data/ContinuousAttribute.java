@@ -7,7 +7,7 @@ public class ContinuousAttribute extends Attribute implements Iterable<Float>, S
     private float max;
     private float min;// rappresentano gli estremi di un intervallo
 
-    public ContinuousAttribute(String name, int index, float min, float max) {
+    protected ContinuousAttribute(String name, int index, float min, float max) {
         super(name, index);
 
         this.max = max;

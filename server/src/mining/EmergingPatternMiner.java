@@ -34,11 +34,11 @@ public class EmergingPatternMiner implements Iterable<EmergingPattern>, Serializ
         if(!OK) throw new EmptySetException();
     }
 
-    float computeGrowRate(Data dataBackground, FrequentPattern fp){
+    protected float computeGrowRate(Data dataBackground, FrequentPattern fp){
         return fp.getSupport() / fp.computeSupport(dataBackground);
     }
 
-    EmergingPattern computeEmergingPattern(Data dataBackground, FrequentPattern fp, float minGR) throws EmergingPatternException{
+    protected EmergingPattern computeEmergingPattern(Data dataBackground, FrequentPattern fp, float minGR) throws EmergingPatternException{
         float growRate = computeGrowRate(dataBackground, fp);
         if (growRate >= minGR)
             return new EmergingPattern (fp, growRate);

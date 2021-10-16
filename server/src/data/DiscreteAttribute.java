@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class DiscreteAttribute extends Attribute implements Serializable {
     String values[];
 
-    public DiscreteAttribute(String name, int index, String values[]) {
+    protected DiscreteAttribute(String name, int index, String values[]) {
         super(name, index);
 
         int dimensione = values.length;

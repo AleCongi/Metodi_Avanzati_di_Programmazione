@@ -6,14 +6,14 @@ import java.net.Socket;
 
 public class MultiServer {
 
-    public static final int PORT = 8080;
+    private static final int PORT = 8080;
 
 
     public static void main(String[] args) throws IOException{             //crea un oggetto istanza di MultiServer
         MultiServer ms = new MultiServer();
     }
 
-    MultiServer() throws IOException{  //invoca il metodo privato run.
+    protected MultiServer() throws IOException{  //invoca il metodo privato run.
         run();
     }
 
