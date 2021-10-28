@@ -1,0 +1,299 @@
+addr = localhost/127.0.0.1
+port=8080
+Socket[addr=localhost/127.0.0.1,port=8080,localport=62041]
+Scegli una opzione:
+1:Nuova scoperta
+2: Risultati in archivio
+1
+Inserire valore minimo supporto (minsup>0 e minsup<=1):
+0.3
+Inserire valore minimo grow rate (minGr>0):
+1
+Tabella target:
+playtennistarget
+Tabella background:
+playtennisBackground
+Frequent patterns
+1:(outlook=rain)[0.375]
+2:(outlook=sunny)[0.375]
+3:(temperature in [0.0,6.06[)[0.375]
+4:(temperature in [24.24,30.3606[)[0.375]
+5:(umidity=normal)[0.375]
+6:(wind=strong)[0.375]
+7:(outlook=sunny) AND (umidity=high)[0.375]
+8:(outlook=sunny) AND (play=no)[0.375]
+9:(temperature in [0.0,6.06[) AND (umidity=normal)[0.375]
+10:(temperature in [24.24,30.3606[) AND (umidity=high)[0.375]
+11:(umidity=high) AND (outlook=sunny)[0.375]
+12:(umidity=high) AND (temperature in [24.24,30.3606[)[0.375]
+13:(umidity=high) AND (play=no)[0.375]
+14:(umidity=normal) AND (temperature in [0.0,6.06[)[0.375]
+15:(wind=weak) AND (play=yes)[0.375]
+16:(play=no) AND (outlook=sunny)[0.375]
+17:(play=no) AND (umidity=high)[0.375]
+18:(play=yes) AND (wind=weak)[0.375]
+19:(outlook=sunny) AND (umidity=high) AND (play=no)[0.375]
+20:(outlook=sunny) AND (play=no) AND (umidity=high)[0.375]
+21:(umidity=high) AND (outlook=sunny) AND (play=no)[0.375]
+22:(umidity=high) AND (play=no) AND (outlook=sunny)[0.375]
+23:(play=no) AND (outlook=sunny) AND (umidity=high)[0.375]
+24:(play=no) AND (umidity=high) AND (outlook=sunny)[0.375]
+25:(play=no)[0.5]
+26:(play=yes)[0.5]
+27:(umidity=high) AND (wind=weak)[0.5]
+28:(wind=weak) AND (umidity=high)[0.5]
+29:(umidity=high)[0.625]
+30:(wind=weak)[0.625]
+
+Emerging patterns
+1:(outlook=rain)[0.375][1.125]
+2:(outlook=sunny)[0.375][1.125]
+3:(wind=weak)[0.625][1.25]
+4:(umidity=high)[0.625][1.875]
+5:(temperature in [0.0,6.06[)[0.375][2.25]
+6:(temperature in [24.24,30.3606[)[0.375][2.25]
+7:(temperature in [0.0,6.06[) AND (umidity=normal)[0.375][2.25]
+8:(umidity=high) AND (play=no)[0.375][2.25]
+9:(umidity=normal) AND (temperature in [0.0,6.06[)[0.375][2.25]
+10:(play=no) AND (umidity=high)[0.375][2.25]
+11:(play=no)[0.5][3.0]
+12:(outlook=sunny) AND (umidity=high)[0.375][Infinity]
+13:(outlook=sunny) AND (play=no)[0.375][Infinity]
+14:(temperature in [24.24,30.3606[) AND (umidity=high)[0.375][Infinity]
+15:(umidity=high) AND (outlook=sunny)[0.375][Infinity]
+16:(umidity=high) AND (temperature in [24.24,30.3606[)[0.375][Infinity]
+17:(play=no) AND (outlook=sunny)[0.375][Infinity]
+18:(outlook=sunny) AND (umidity=high) AND (play=no)[0.375][Infinity]
+19:(outlook=sunny) AND (play=no) AND (umidity=high)[0.375][Infinity]
+20:(umidity=high) AND (outlook=sunny) AND (play=no)[0.375][Infinity]
+21:(umidity=high) AND (play=no) AND (outlook=sunny)[0.375][Infinity]
+22:(play=no) AND (outlook=sunny) AND (umidity=high)[0.375][Infinity]
+23:(play=no) AND (umidity=high) AND (outlook=sunny)[0.375][Infinity]
+24:(umidity=high) AND (wind=weak)[0.5][Infinity]
+25:(wind=weak) AND (umidity=high)[0.5][Infinity]
+
+Vuoi ripetere?(s/n)
+s
+Scegli una opzione:
+1:Nuova scoperta
+2: Risultati in archivio
+1
+Inserire valore minimo supporto (minsup>0 e minsup<=1):
+0.3
+Inserire valore minimo grow rate (minGr>0):
+3
+Tabella target:
+dfg
+Tabella background:
+df
+Errore
+Errore
+Vuoi ripetere?(s/n)
+s
+Scegli una opzione:
+1:Nuova scoperta
+2: Risultati in archivio
+1
+Inserire valore minimo supporto (minsup>0 e minsup<=1):
+0.3
+Inserire valore minimo grow rate (minGr>0):
+2
+Tabella target:
+playtennisbackground
+Tabella background:
+playtennistarget
+Frequent patterns
+1:(outlook=overcast)[0.33333334]
+2:(outlook=rain)[0.33333334]
+3:(outlook=sunny)[0.33333334]
+4:(umidity=high)[0.33333334]
+5:(outlook=overcast) AND (play=yes)[0.33333334]
+6:(outlook=rain) AND (temperature in [11.7439995,17.566[)[0.33333334]
+7:(outlook=sunny) AND (umidity=normal)[0.33333334]
+8:(outlook=sunny) AND (play=yes)[0.33333334]
+9:(temperature in [11.7439995,17.566[) AND (outlook=rain)[0.33333334]
+10:(temperature in [11.7439995,17.566[) AND (umidity=high)[0.33333334]
+11:(temperature in [11.7439995,17.566[) AND (umidity=normal)[0.33333334]
+12:(umidity=high) AND (temperature in [11.7439995,17.566[)[0.33333334]
+13:(umidity=high) AND (wind=strong)[0.33333334]
+14:(umidity=normal) AND (outlook=sunny)[0.33333334]
+15:(umidity=normal) AND (temperature in [11.7439995,17.566[)[0.33333334]
+16:(wind=strong) AND (umidity=high)[0.33333334]
+17:(wind=strong) AND (play=yes)[0.33333334]
+18:(play=yes) AND (outlook=overcast)[0.33333334]
+19:(play=yes) AND (outlook=sunny)[0.33333334]
+20:(play=yes) AND (wind=strong)[0.33333334]
+21:(outlook=sunny) AND (umidity=normal) AND (play=yes)[0.33333334]
+22:(outlook=sunny) AND (play=yes) AND (umidity=normal)[0.33333334]
+23:(temperature in [11.7439995,17.566[) AND (umidity=high) AND (wind=strong)[0.33333334]
+24:(temperature in [11.7439995,17.566[) AND (umidity=normal) AND (play=yes)[0.33333334]
+25:(temperature in [11.7439995,17.566[) AND (wind=strong) AND (umidity=high)[0.33333334]
+26:(temperature in [11.7439995,17.566[) AND (wind=strong) AND (play=yes)[0.33333334]
+27:(temperature in [11.7439995,17.566[) AND (play=yes) AND (umidity=normal)[0.33333334]
+28:(temperature in [11.7439995,17.566[) AND (play=yes) AND (wind=strong)[0.33333334]
+29:(umidity=high) AND (temperature in [11.7439995,17.566[) AND (wind=strong)[0.33333334]
+30:(umidity=high) AND (wind=strong) AND (temperature in [11.7439995,17.566[)[0.33333334]
+31:(umidity=normal) AND (outlook=sunny) AND (play=yes)[0.33333334]
+32:(umidity=normal) AND (temperature in [11.7439995,17.566[) AND (play=yes)[0.33333334]
+33:(umidity=normal) AND (play=yes) AND (outlook=sunny)[0.33333334]
+34:(umidity=normal) AND (play=yes) AND (temperature in [11.7439995,17.566[)[0.33333334]
+35:(wind=strong) AND (temperature in [11.7439995,17.566[) AND (umidity=high)[0.33333334]
+36:(wind=strong) AND (temperature in [11.7439995,17.566[) AND (play=yes)[0.33333334]
+37:(wind=strong) AND (umidity=high) AND (temperature in [11.7439995,17.566[)[0.33333334]
+38:(wind=strong) AND (play=yes) AND (temperature in [11.7439995,17.566[)[0.33333334]
+39:(play=yes) AND (outlook=sunny) AND (umidity=normal)[0.33333334]
+40:(play=yes) AND (temperature in [11.7439995,17.566[) AND (umidity=normal)[0.33333334]
+41:(play=yes) AND (temperature in [11.7439995,17.566[) AND (wind=strong)[0.33333334]
+42:(play=yes) AND (umidity=normal) AND (outlook=sunny)[0.33333334]
+43:(play=yes) AND (umidity=normal) AND (temperature in [11.7439995,17.566[)[0.33333334]
+44:(play=yes) AND (wind=strong) AND (temperature in [11.7439995,17.566[)[0.33333334]
+45:(wind=strong)[0.5]
+46:(wind=weak)[0.5]
+47:(temperature in [11.7439995,17.566[) AND (wind=strong)[0.5]
+48:(temperature in [11.7439995,17.566[) AND (play=yes)[0.5]
+49:(umidity=normal) AND (wind=weak)[0.5]
+50:(wind=strong) AND (temperature in [11.7439995,17.566[)[0.5]
+51:(wind=weak) AND (umidity=normal)[0.5]
+52:(wind=weak) AND (play=yes)[0.5]
+53:(play=yes) AND (temperature in [11.7439995,17.566[)[0.5]
+54:(play=yes) AND (wind=weak)[0.5]
+55:(umidity=normal) AND (wind=weak) AND (play=yes)[0.5]
+56:(umidity=normal) AND (play=yes) AND (wind=weak)[0.5]
+57:(wind=weak) AND (umidity=normal) AND (play=yes)[0.5]
+58:(wind=weak) AND (play=yes) AND (umidity=normal)[0.5]
+59:(play=yes) AND (umidity=normal) AND (wind=weak)[0.5]
+60:(play=yes) AND (wind=weak) AND (umidity=normal)[0.5]
+61:(temperature in [11.7439995,17.566[)[0.6666667]
+62:(umidity=normal)[0.6666667]
+63:(umidity=normal) AND (play=yes)[0.6666667]
+64:(play=yes) AND (umidity=normal)[0.6666667]
+65:(play=yes)[0.8333333]
+
+Emerging patterns
+1:(outlook=rain) AND (temperature in [11.7439995,17.566[)[0.33333334][2.6666667]
+2:(temperature in [11.7439995,17.566[) AND (outlook=rain)[0.33333334][2.6666667]
+3:(umidity=high) AND (wind=strong)[0.33333334][2.6666667]
+4:(wind=strong) AND (umidity=high)[0.33333334][2.6666667]
+5:(wind=strong) AND (play=yes)[0.33333334][2.6666667]
+6:(play=yes) AND (wind=strong)[0.33333334][2.6666667]
+7:(temperature in [11.7439995,17.566[)[0.6666667][2.6666667]
+8:(umidity=normal) AND (play=yes)[0.6666667][2.6666667]
+9:(play=yes) AND (umidity=normal)[0.6666667][2.6666667]
+10:(temperature in [11.7439995,17.566[) AND (play=yes)[0.5][4.0]
+11:(umidity=normal) AND (wind=weak)[0.5][4.0]
+12:(wind=weak) AND (umidity=normal)[0.5][4.0]
+13:(play=yes) AND (temperature in [11.7439995,17.566[)[0.5][4.0]
+14:(umidity=normal) AND (wind=weak) AND (play=yes)[0.5][4.0]
+15:(umidity=normal) AND (play=yes) AND (wind=weak)[0.5][4.0]
+16:(wind=weak) AND (umidity=normal) AND (play=yes)[0.5][4.0]
+17:(wind=weak) AND (play=yes) AND (umidity=normal)[0.5][4.0]
+18:(play=yes) AND (umidity=normal) AND (wind=weak)[0.5][4.0]
+19:(play=yes) AND (wind=weak) AND (umidity=normal)[0.5][4.0]
+20:(outlook=sunny) AND (umidity=normal)[0.33333334][Infinity]
+21:(outlook=sunny) AND (play=yes)[0.33333334][Infinity]
+22:(temperature in [11.7439995,17.566[) AND (umidity=normal)[0.33333334][Infinity]
+23:(umidity=normal) AND (outlook=sunny)[0.33333334][Infinity]
+24:(umidity=normal) AND (temperature in [11.7439995,17.566[)[0.33333334][Infinity]
+25:(play=yes) AND (outlook=sunny)[0.33333334][Infinity]
+26:(outlook=sunny) AND (umidity=normal) AND (play=yes)[0.33333334][Infinity]
+27:(outlook=sunny) AND (play=yes) AND (umidity=normal)[0.33333334][Infinity]
+28:(temperature in [11.7439995,17.566[) AND (umidity=high) AND (wind=strong)[0.33333334][Infinity]
+29:(temperature in [11.7439995,17.566[) AND (umidity=normal) AND (play=yes)[0.33333334][Infinity]
+30:(temperature in [11.7439995,17.566[) AND (wind=strong) AND (umidity=high)[0.33333334][Infinity]
+31:(temperature in [11.7439995,17.566[) AND (wind=strong) AND (play=yes)[0.33333334][Infinity]
+32:(temperature in [11.7439995,17.566[) AND (play=yes) AND (umidity=normal)[0.33333334][Infinity]
+33:(temperature in [11.7439995,17.566[) AND (play=yes) AND (wind=strong)[0.33333334][Infinity]
+34:(umidity=high) AND (temperature in [11.7439995,17.566[) AND (wind=strong)[0.33333334][Infinity]
+35:(umidity=high) AND (wind=strong) AND (temperature in [11.7439995,17.566[)[0.33333334][Infinity]
+36:(umidity=normal) AND (outlook=sunny) AND (play=yes)[0.33333334][Infinity]
+37:(umidity=normal) AND (temperature in [11.7439995,17.566[) AND (play=yes)[0.33333334][Infinity]
+38:(umidity=normal) AND (play=yes) AND (outlook=sunny)[0.33333334][Infinity]
+39:(umidity=normal) AND (play=yes) AND (temperature in [11.7439995,17.566[)[0.33333334][Infinity]
+40:(wind=strong) AND (temperature in [11.7439995,17.566[) AND (umidity=high)[0.33333334][Infinity]
+41:(wind=strong) AND (temperature in [11.7439995,17.566[) AND (play=yes)[0.33333334][Infinity]
+42:(wind=strong) AND (umidity=high) AND (temperature in [11.7439995,17.566[)[0.33333334][Infinity]
+43:(wind=strong) AND (play=yes) AND (temperature in [11.7439995,17.566[)[0.33333334][Infinity]
+44:(play=yes) AND (outlook=sunny) AND (umidity=normal)[0.33333334][Infinity]
+45:(play=yes) AND (temperature in [11.7439995,17.566[) AND (umidity=normal)[0.33333334][Infinity]
+46:(play=yes) AND (temperature in [11.7439995,17.566[) AND (wind=strong)[0.33333334][Infinity]
+47:(play=yes) AND (umidity=normal) AND (outlook=sunny)[0.33333334][Infinity]
+48:(play=yes) AND (umidity=normal) AND (temperature in [11.7439995,17.566[)[0.33333334][Infinity]
+49:(play=yes) AND (wind=strong) AND (temperature in [11.7439995,17.566[)[0.33333334][Infinity]
+50:(temperature in [11.7439995,17.566[) AND (wind=strong)[0.5][Infinity]
+51:(wind=strong) AND (temperature in [11.7439995,17.566[)[0.5][Infinity]
+
+Vuoi ripetere?(s/n)
+s
+Scegli una opzione:
+1:Nuova scoperta
+2: Risultati in archivio
+2
+Inserire valore minimo supporto (minsup>0 e minsup<=1):
+0.3
+Inserire valore minimo grow rate (minGr>0):
+1
+Tabella target:
+playtennistarget
+Tabella background:
+playtennisbackground
+Frequent patterns
+1:(outlook=rain)[0.375]
+2:(outlook=sunny)[0.375]
+3:(temperature in [0.0,6.06[)[0.375]
+4:(temperature in [24.24,30.3606[)[0.375]
+5:(umidity=normal)[0.375]
+6:(wind=strong)[0.375]
+7:(outlook=sunny) AND (umidity=high)[0.375]
+8:(outlook=sunny) AND (play=no)[0.375]
+9:(temperature in [0.0,6.06[) AND (umidity=normal)[0.375]
+10:(temperature in [24.24,30.3606[) AND (umidity=high)[0.375]
+11:(umidity=high) AND (outlook=sunny)[0.375]
+12:(umidity=high) AND (temperature in [24.24,30.3606[)[0.375]
+13:(umidity=high) AND (play=no)[0.375]
+14:(umidity=normal) AND (temperature in [0.0,6.06[)[0.375]
+15:(wind=weak) AND (play=yes)[0.375]
+16:(play=no) AND (outlook=sunny)[0.375]
+17:(play=no) AND (umidity=high)[0.375]
+18:(play=yes) AND (wind=weak)[0.375]
+19:(outlook=sunny) AND (umidity=high) AND (play=no)[0.375]
+20:(outlook=sunny) AND (play=no) AND (umidity=high)[0.375]
+21:(umidity=high) AND (outlook=sunny) AND (play=no)[0.375]
+22:(umidity=high) AND (play=no) AND (outlook=sunny)[0.375]
+23:(play=no) AND (outlook=sunny) AND (umidity=high)[0.375]
+24:(play=no) AND (umidity=high) AND (outlook=sunny)[0.375]
+25:(play=no)[0.5]
+26:(play=yes)[0.5]
+27:(umidity=high) AND (wind=weak)[0.5]
+28:(wind=weak) AND (umidity=high)[0.5]
+29:(umidity=high)[0.625]
+30:(wind=weak)[0.625]
+
+Emerging patterns
+1:(outlook=rain)[0.375][1.125]
+2:(outlook=sunny)[0.375][1.125]
+3:(wind=weak)[0.625][1.25]
+4:(umidity=high)[0.625][1.875]
+5:(temperature in [0.0,6.06[)[0.375][2.25]
+6:(temperature in [24.24,30.3606[)[0.375][2.25]
+7:(temperature in [0.0,6.06[) AND (umidity=normal)[0.375][2.25]
+8:(umidity=high) AND (play=no)[0.375][2.25]
+9:(umidity=normal) AND (temperature in [0.0,6.06[)[0.375][2.25]
+10:(play=no) AND (umidity=high)[0.375][2.25]
+11:(play=no)[0.5][3.0]
+12:(outlook=sunny) AND (umidity=high)[0.375][Infinity]
+13:(outlook=sunny) AND (play=no)[0.375][Infinity]
+14:(temperature in [24.24,30.3606[) AND (umidity=high)[0.375][Infinity]
+15:(umidity=high) AND (outlook=sunny)[0.375][Infinity]
+16:(umidity=high) AND (temperature in [24.24,30.3606[)[0.375][Infinity]
+17:(play=no) AND (outlook=sunny)[0.375][Infinity]
+18:(outlook=sunny) AND (umidity=high) AND (play=no)[0.375][Infinity]
+19:(outlook=sunny) AND (play=no) AND (umidity=high)[0.375][Infinity]
+20:(umidity=high) AND (outlook=sunny) AND (play=no)[0.375][Infinity]
+21:(umidity=high) AND (play=no) AND (outlook=sunny)[0.375][Infinity]
+22:(play=no) AND (outlook=sunny) AND (umidity=high)[0.375][Infinity]
+23:(play=no) AND (umidity=high) AND (outlook=sunny)[0.375][Infinity]
+24:(umidity=high) AND (wind=weak)[0.5][Infinity]
+25:(wind=weak) AND (umidity=high)[0.5][Infinity]
+
+Vuoi ripetere?(s/n)
+n
