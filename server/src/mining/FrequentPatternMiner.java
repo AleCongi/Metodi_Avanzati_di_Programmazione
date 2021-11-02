@@ -166,7 +166,7 @@ public class FrequentPatternMiner implements Iterable<FrequentPattern>, Serializ
      *
      */
     public String toString() {
-        String output = "Frequent patterns\n";
+        String output="";
         int i = 0;
 
         Iterator p = outputFP.iterator();

@@ -33,7 +33,7 @@ public class MainTest {
 		ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
 		ObjectInputStream in = new ObjectInputStream(socket.getInputStream());	; // stream con richieste del client
 
-		
+
 		char risp='s';
 		do{
 			System.out.println("Scegli una opzione:");

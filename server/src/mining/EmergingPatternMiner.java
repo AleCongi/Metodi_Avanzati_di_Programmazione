@@ -73,7 +73,7 @@ public class EmergingPatternMiner implements Iterable<EmergingPattern>, Serializ
      *
      */
     public String toString() {
-        String output = "Emerging patterns\n";
+        String output ="";
         int i = 0;
         Iterator p = epList.listIterator();
         while (p.hasNext()) {
