@@ -11,10 +11,11 @@ public class ContinuousAttributeIterator implements Iterator<Float>, Serializabl
 	private int numValues;
 
 	/**
+	 * avvalora i membri attributo della classe con i parametri del costruttore
 	 * @param min valore reale indicante il minimo
 	 * @param max valore reale indicante il massimo
 	 * @param numValues intero che indica il numero di valori
-	 * avvalora i membri attributo della classe con i parametri del costruttore
+	 *
 	 */
 	ContinuousAttributeIterator(float min,float max,int numValues){
 		this.min=min;

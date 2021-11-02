@@ -10,17 +10,19 @@ public class MultiServer {
 
 
     /**
+     * main che permette l'avviamento del server
      * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
      * @param args
-     * main
+     *
      */
     public static void main(String[] args) throws IOException{             //crea un oggetto istanza di MultiServer
         MultiServer ms = new MultiServer();
     }
 
     /**
-     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
      * invoca il metodo privato run
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
+     *
      */
     protected MultiServer() throws IOException{
         run();
@@ -28,10 +30,11 @@ public class MultiServer {
 
 
     /**
-     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
      * assegna ad una variabile locale s il riferimento ad una istanza della classe ServerSocket creata usando la
      * porta PORT. s si pone in attesa di richieste di connessione da parte di client in risposta alle quali viene
      * restituito l’oggetto Socket da passare come argomento al costruttore della classe ServerOneClient.
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
+     *
      */
     private void run() throws IOException {
 

@@ -24,26 +24,29 @@ public class ContinuousAttribute extends Attribute implements Iterable<Float>, S
 
 
     /**
+     * restituisce il minimo
      * @author Raffaele Di Anna, Alessandro Carella, Alessandro Congedo
      * @return min
-     * restituisce il minimo
+     *
      */
     public float getMin() {
         return this.min;
     }
 
     /**
+     * restituisce il massimo
      * @author Raffaele Di Anna, Alessandro Carella, Alessandro Congedo
      * @return max
-     * restituisce il massimo
+     *
      */
     public float getMax() {
         return this.max;
     }
 
     /**
-     * @author Raffaele Di Anna, Alessandro Carella, Alessandro Congedo
      * Costruttore dell'iteratore
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro Congedo
+     *
      */
     public Iterator<Float> iterator(){
         return new ContinuousAttributeIterator(min, max, 5);

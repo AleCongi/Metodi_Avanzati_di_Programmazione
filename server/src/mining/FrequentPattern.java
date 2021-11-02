@@ -23,8 +23,9 @@ public class FrequentPattern implements Iterable<Item>, Comparable<FrequentPatte
 
 
 	/**
+	 * Costruttore del FrequentPattern
 	 * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
-	 * costruttore del FrequentPattern
+	 *
 	 */
 	public FrequentPattern(){
 		fp = new LinkedList<Item>();
@@ -32,9 +33,10 @@ public class FrequentPattern implements Iterable<Item>, Comparable<FrequentPatte
 
 
 	/**
+	 * costruttore per copia del FrequentPattern
 	 * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
 	 * @param FP FrequentPattern
-	 * costruttore per copia del FrequentPattern
+	 *
 	 */
 	public FrequentPattern(FrequentPattern FP){
 		fp = new LinkedList<Item>();
@@ -50,9 +52,10 @@ public class FrequentPattern implements Iterable<Item>, Comparable<FrequentPatte
 
 
 	/**
+	 * aggiungo nuovo item al pattern
 	 * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
 	 * @param item oggetto di tipo item da aggiungere al FrequentPattern
-	 * aggiungo nuovo item al pattern
+	 *
 	 */
 	protected void addItem(Item item)
 	{
@@ -61,9 +64,10 @@ public class FrequentPattern implements Iterable<Item>, Comparable<FrequentPatte
 
 
 	/**
+	 * restituisce l'item in posizione index
 	 * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
 	 * @param index intero indicante l'indice
-	 * restituisce l'item in posizione index
+	 *
 	 */
 	public Item getItem(int index){
 		return fp.get(index);
@@ -71,8 +75,9 @@ public class FrequentPattern implements Iterable<Item>, Comparable<FrequentPatte
 
 
 	/**
-	 * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
 	 * restituisce il supporto del FrequentPattern
+	 * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
+	 *
 	 */
 	public float getSupport(){
 		 return support;
@@ -80,8 +85,9 @@ public class FrequentPattern implements Iterable<Item>, Comparable<FrequentPatte
 
 
 	/**
-	 * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
 	 * restituisce la lunghezza del FrequentPattern
+	 * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
+	 *
 	 */
 	 public int getPatternLength(){
 		return fp.size();
@@ -112,9 +118,10 @@ public class FrequentPattern implements Iterable<Item>, Comparable<FrequentPatte
 
 
 	/**
+	 * restituisce un float che rappresenta il supporto aggiornato
 	 * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
 	 * @param data oggetto di tipo data
-	 * restituisce un float che rappresenta il supporto aggiornato
+	 *
 	 */
 		 protected float computeSupport(Data data){
 			int suppCount=0;
@@ -156,17 +163,19 @@ public class FrequentPattern implements Iterable<Item>, Comparable<FrequentPatte
 		}
 
 	/**
+	 * imposta il supporto del FrequentPattern con il valore support
 	 * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
 	 * @param support valore reale indicante il supporto
-	 * imposta il supporto del FrequentPattern con il valore support
+	 *
 	 */
 	 protected void setSupport(float support) {
 		 this.support = support;
 	 }
 
 	/**
-	 * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
 	 * iteratore
+	 * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
+	 *
 	 */
 	@Override
 	public Iterator<Item> iterator() {
@@ -174,9 +183,10 @@ public class FrequentPattern implements Iterable<Item>, Comparable<FrequentPatte
 	}
 
 	/**
+	 * Override della funzione compareTo che permette di comparare il supporto tra frequentPattern
 	 * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
 	 * @param f oggetto di tipo FrequentPattern
-	 * Override della funzione compareTo che permette di comparare il supporto tra frequentPattern
+	 *
 	 */
 	@Override
 	public int compareTo(FrequentPattern f) {

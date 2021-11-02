@@ -12,6 +12,7 @@ import keyboardinput.Keyboard;
 public class MainTest {
 
 	/**
+	 * main che permetterà al client di connettersi al server
 	 * @param args
 	 */
 	public static void main(String[] args) throws IOException, ClassNotFoundException{

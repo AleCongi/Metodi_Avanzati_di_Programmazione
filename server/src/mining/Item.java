@@ -11,10 +11,11 @@ public abstract class Item implements Serializable {
 
 
     /**
+     * costruttore di Item
      * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
      * @param attribute oggetto di tipo Attribute
      * @param value oggetto indicante il valore
-     * costruttore di Item
+     *
      */
     public Item(Attribute attribute, Object value){
      this.attribute=attribute;
@@ -22,25 +23,27 @@ public abstract class Item implements Serializable {
     }
 
     /**
-     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
      * restituisce l'attributo di Item
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
+     *
      */
     public Attribute getAttribute() {
         return attribute;
     }
 
     /**
-     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
      * restituisce il valore di Item
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
+     *
      */
     public Object getValue() {
         return value;
     }
 
     /**
+     * metodo astratto per verificare che il valore rispetti una determinata condizione.
      * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
      * @param value oggetto indicante il valore
-     * metodo astratto per verificare che il valore rispetti una determinata condizione.
      *
      */
     public abstract boolean checkItemCondition(Object value);
