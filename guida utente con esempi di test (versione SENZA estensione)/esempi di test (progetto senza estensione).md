@@ -4,7 +4,7 @@ Una volta avviato il client si avrà la possibilità di selezionare la modalità
 - _Nuova scoperta_
 - _Ricerca in archivio_
 
-![SQLCODE](menu.png)<p>
+![MENU](menu.png)<p>
 
 Per selezionare una delle due modalità basterà digitare:<p>
 1 _per Nuova scoperta_.<p>
@@ -22,7 +22,7 @@ Per selezionare una delle due modalità basterà digitare:<p>
 # _NUOVA SCOPERTA_
 
 Per effettuare una nuova ricerca basterà digitare 1 al momento della scelta della modalità:<p>
-![SQLCODE](scelta1.png)<p>
+![SCELTA](scelta1.png)<p>
 
 Una volta effettuata la scelta, bisognerà inserire i relativi valori quando richiesti e premere invio ogni volta inseriti.<p><br>
 
@@ -32,41 +32,41 @@ Una volta effettuata la scelta, bisognerà inserire i relativi valori quando ric
 <br>
 
 - Dopo aver digitato i valori: <p>
-![SQLCODE](inserimentocaso1.png)<p><br>
+![INSERIMENTO](inserimentocaso1.png)<p><br>
 
 - Dopo aver premuto invio, si otterranno i risultati:<p>
-![SQLCODE](risultatofpcaso1.png)<p><br>
-![SQLCODE](risultatoepcaso1.png)<p><br>
+![RISULTATO1](risultatofpcaso1.png)<p><br>
+![RISULTATO2](risultatoepcaso1.png)<p><br>
 
 
 ## Caso 2) Nuova ricerca, Tabella Target e Background non esistenti, pattern frequenti ed emergenti non ritrovati:
 <br>
 
 - Dopo aver digitato i valori: <p>
-![SQLCODE](inserimentocaso2.png)<p><br>
+![INSERIMENTO2](inserimentocaso2.png)<p><br>
 
 - Dopo aver premuto invio, si otterranno i risultati:<p>
-![SQLCODE](risultatocaso2.png)<p><br>
+![RISULTATO3](risultatocaso2.png)<p><br>
 
 
 ## Caso 3) Nuova ricerca, tabella Target e Background esistenti e invertite, pattern frequenti ed emergenti ritrovati
 <br>
 
 - Dopo aver digitato i valori: <p>
-![SQLCODE](inserimentocaso6.png)<p><br>
+![INSERIMENTO3](inserimentocaso6.png)<p><br>
 
 
 - Dopo aver premuto invio, si otterranno i risultati:<p>
-![SQLCODE](risultatofpcaso6.png)<p>
-![SQLCODE](risultatofpcaso6.2.png)<p><br>
-![SQLCODE](risultatoepcaso6.png)<p>
-![SQLCODE](risultatoepcaso6.2.png)<p><br>
+![RISULTATO4](risultatofpcaso6.png)<p>
+![RISULTATO5](risultatofpcaso6.2.png)<p><br>
+![RISULTATO6](risultatoepcaso6.png)<p>
+![RISULTATO7](risultatoepcaso6.2.png)<p><br>
 
 # _RICERCA IN ARCHIVIO_
 
 Per effettuare una ricerca nell' archivio così da consultare file presenti su disco, sfruttando ricerche effettuate precedentemente, basterà digitare _2_ momento della scelta della modalità:<p>
 
-![SQLCODE](scelta2.png)<p>
+![SCELTA2](scelta2.png)<p>
 Una volta effettuata la scelta, bisognerà inserire i relativi valori quando richiesti e premere invio ogni volta inseriti.<p><br>
 
 # _RICERCA IN ARCHIVIO - CASI POSSIBILI_
@@ -76,34 +76,34 @@ Una volta effettuata la scelta, bisognerà inserire i relativi valori quando ric
 <br>
 
 - Dopo aver digitato i valori: <p>
-![SQLCODE](inserimentocaso3.png)<p><br>
+![INSERIMENTO4](inserimentocaso3.png)<p><br>
 
 
 - Dopo aver premuto invio, si otterranno i risultati:<p>
-![SQLCODE](risultatofpcaso3.png)<p><br>
-![SQLCODE](risultatoepcaso3.png)<p><br>
+![RISULTATO8](risultatofpcaso3.png)<p><br>
+![RISULTATO9](risultatoepcaso3.png)<p><br>
 
 
 ## Caso 2) Ricerca in archivio, Tabella Target non esistente e tabella Background non esistente, pattern frequenti ed emergenti non ritrovati:
 <br>
 
 - Dopo aver digitato i valori: <p>
-![SQLCODE](inserimentocaso4.png)<p><br>
+![INSERIMENTO5](inserimentocaso4.png)<p><br>
 
 
 - Dopo aver premuto invio, si otterranno i risultati:<p>
-![SQLCODE](risultatocaso4.png)<p><br>
+![RISULTATO10](risultatocaso4.png)<p><br>
 
 
 ## Caso 3) Ricerca in archivio, tabella Target e Background esistenti, pattern frequenti ritrovati e pattern emergenti non ritrovati
 <br>
 
 - Dopo aver digitato i valori: <p>
-![SQLCODE](inserimentocaso5.png)<p><br>
+![INSERIMENTO6](inserimentocaso5.png)<p><br>
 
 
 - Dopo aver premuto invio, si otterranno i risultati:<p>
-![SQLCODE](risultatocaso5.png)<p><br>
+![RISULTATO11](risultatocaso5.png)<p><br>
 
 
 ---

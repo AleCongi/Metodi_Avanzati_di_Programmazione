@@ -8,7 +8,7 @@ Una volta trovati nella schermata principale del programma si potrà visualizzar
 - _Segnala un problema_
 - _GitHub_
 
-![SQLCODE](menu.png)<p><br>
+![MENU](menu.png)<p><br>
 
 - _Nuova scoperta_: permette di effettuare una nuova ricerca in modo tale da trovare Pattern Frequenti e Pattern Emergenti sfruttando una tabella Target e una tabella Background.
 
@@ -24,10 +24,10 @@ Una volta trovati nella schermata principale del programma si potrà visualizzar
 # _NUOVA SCOPERTA_
 
 Per effettuare una nuova scoperta basterà cliccare sul bottone _"NUOVA SCOPERTA"_:<p>
-![SQLCODE](selezionenuovascoperta.png)<p><br>
+![SELEZIONE](selezionenuovascoperta.png)<p><br>
 
 Nella finestra successiva si ha la possibilità di inserire i vari input o di tornare indietro nel menù.<p>
-![SQLCODE](inserimentocampi.png)<p>
+![INSERIMENTO](inserimentocampi.png)<p>
 Una volta inseriti i dati premendo _"CONFERMA"_ si ha la possibilità di visualizzare i risultati. Nel caso in cui i dati inseriti non dovessero rispettare i vincoli indicati o dovessero esserci campi vuoti, questi dati non verrebbero accettati. Quindi sarebbe necessario aggiustarli per proseguire.<p><br>
 
 # _NUOVA SCOPERTA - CASI POSSIBILI_
@@ -37,54 +37,54 @@ Una volta inseriti i dati premendo _"CONFERMA"_ si ha la possibilità di visuali
  <br>
 
 - Dopo aver selezionato _"NUOVA SCOPERTA"_ dal menù:<p>
-![SQLCODE](selezionenuovascoperta.png)<p><br>
+![SELEZIONE2](selezionenuovascoperta.png)<p><br>
 
 
 - Inseriti i dati all'interno dei rispettivi campi:<p>
-![SQLCODE](daticaso1.png)<p><br>
+![INSERIMENTO1](daticaso1.png)<p><br>
 
 
 - Dopo aver cliccato su _"CONFERMA"_ si ottiene la stampa dei risultati: <p>
-![SQLCODE](risultatocaso1.png)<p><br>
+![RISULTATO1](risultatocaso1.png)<p><br>
 
 
 ## Caso 2) Nuova ricerca, Tabella Target e Background non esistenti, pattern frequenti ed emergenti non ritrovati:
 <br>
 
 - Dopo aver selezionato _"NUOVA SCOPERTA"_ dal menù:<p>
-![SQLCODE](selezionenuovascoperta.png)<p><br>
+![SELEZIONE2](selezionenuovascoperta.png)<p><br>
 
 - Inseriti i dati all'interno dei rispettivi campi (indicando nel campo tabella Target e Background, due tabelle non esistenti):<p>
 ![SQLCODE](risultatocaso2.png)<p><br>
 
 - Dopo aver cliccato su _"CONFERMA"_ si ottiene la stampa dei risultati (che in questo caso ci mostreranno due messaggi di errore, in quanto tabelle non esistenti e quindi _frequent pattern_ e _emerging pattern_ non ritrovati): <p>
-![SQLCODE](errore1.png)<p><br>
+![RISULTATO](errore1.png)<p><br>
 
 
 ## Caso 3) Nuova ricerca, tabella Target e Background esistenti e invertite, pattern frequenti ed emergenti ritrovati
 <br>
 
 - Dopo aver selezionato _"NUOVA SCOPERTA"_ dal menù:<p>
-![SQLCODE](selezionenuovascoperta.png)<p><br>
+![SELEZIONE](selezionenuovascoperta.png)<p><br>
 
 
 - Inseriti i dati all'interno dei rispettivi campi (invertendo tabella target e tabella background):<p>
-![SQLCODE](inversione.png)<p><br>
+![SELEZIONE](inversione.png)<p><br>
 
 
 - Dopo aver cliccato su _"CONFERMA"_ si ottiene la stampa dei risultati: <p>
-![SQLCODE](risultatoinversione.png)<p><br>
+![RISULTATO](risultatoinversione.png)<p><br>
 
 
 # _RICERCA IN ARCHIVIO_
 
 Per effettuare una ricerca nell' archivio così da consultare file presenti su disco, sfruttando ricerche effettuate precedentemente, cliccare sul bottone _"RICERCA IN ARCHIVIO"_.
 
-![SQLCODE](selezionericercaarchivio.png)<p><br>
+![SELEZIONE](selezionericercaarchivio.png)<p><br>
 
 Nella finestra successiva si ha la possibilità di inserire i vari input o di tornare indietro nel menù.<p>
 
-![SQLCODE](inserimentocampi.png)<p>
+![INSERIMENTO](inserimentocampi.png)<p>
 Una volta inseriti i dati premendo _"CONFERMA"_ si ha la possibilità di visualizzare i risultati. Nel caso in cui i dati inseriti non dovessero rispettare i vincoli indicati o dovessero esserci campi vuoti, questi dati non verrebbero accettati. Quindi sarebbe necessario aggiustarli per proseguire.<p><br>
 
 
@@ -98,62 +98,62 @@ Una volta inseriti i dati premendo _"CONFERMA"_ si ha la possibilità di visuali
 <br>
 
 - Dopo aver selezionato _RICERCA IN ARCHIVIO_ dal menù:<p>
-![SQLCODE](selezionericercaarchivio.png)<p><br>
+![SELEZIONE](selezionericercaarchivio.png)<p><br>
 
 - Inseriti i dati all'interno dei rispettivi campi:<p>
-![SQLCODE](daticaso1.png)<p><br>
+![INSERIMENTO](daticaso1.png)<p><br>
 
 
 - Dopo aver cliccato su _"CONFERMA"_ si ottiene la stampa dei risultati: <p>
-![SQLCODE](risultatocaso1.png)<p><br>
+![RISULTATO](risultatocaso1.png)<p><br>
 
 ## Caso 2) Ricerca in archivio, Tabella Target non esistente e tabella Background non esistente, pattern frequenti ed emergenti non ritrovati:
 <br>
 
 - Dopo aver selezionato _RICERCA IN ARCHIVIO_ dal menù:<p>
-![SQLCODE](selezionericercaarchivio.png)<p><br>
+![SELEZIONE](selezionericercaarchivio.png)<p><br>
 
 - Inseriti i dati all'interno dei rispettivi campi (indicando nel campo tabella Target e Background, due tabelle non esistenti):<p>
-![SQLCODE](risultatocaso2.png)<p><br>
+![RISULTATO](risultatocaso2.png)<p><br>
 
 - Dopo aver cliccato su _"CONFERMA"_ si ottiene la stampa dei risultati (che in questo caso saranno due messaggi di errore in quanto non sono stati trovati i file) <p>
-![SQLCODE](errore1.png)<p><br>
+![RISULTATO](errore1.png)<p><br>
 
 ## Caso 3) Ricerca in archivio, tabella Target e Background esistenti, pattern frequenti ritrovati e pattern emergenti non ritrovati
 <br>
 
 - Dopo aver selezionato _RICERCA IN ARCHIVIO_ dal menù:<p>
-![SQLCODE](selezionericercaarchivio.png)<p><br>
+![SELEZIONE](selezionericercaarchivio.png)<p><br>
 
 - Inseriti i dati all'interno dei rispettivi campi (indicando nel campo del grow rate un valore che non sia mai stato cercato):<p>
-![SQLCODE](casogrowratetroppo.png)<p><br>
+![INSERIMENTO](casogrowratetroppo.png)<p><br>
 
 - Dopo aver cliccato su _"CONFERMA"_ si ottiene la stampa dei risultati (in questo caso avremo la stampa dei frequent pattern e il messaggio di errore per gli emerging pattern in quanto non trovati) <p>
-![SQLCODE](frequenttrovatinoemerging.png)<p><br>
+![RISULTATO](frequenttrovatinoemerging.png)<p><br>
 
 
 # _CREDITI_ 
 
 Per visualizzare i crediti, e quindi per visualizzare chi ha contribuito al progetto e i dettagli di esso, basterà cliccare dal menù sulla voce _"CREDITI"_<p>
-![SQLCODE](crediti.png)<p><br>
+![CREDITI](crediti.png)<p><br>
 
 Dopo aver cliccato, si otterrà la pagina relativa ai crediti:<p>
-![SQLCODE](risultatocrediti.png)<p><br>
+![RISULTATO](risultatocrediti.png)<p><br>
 
 
 # _SEGNALA UN PROBLEMA_
 
 Per visualizzare i contatti di coloro che hanno realizzato il progetto così da poter inviare una segnalazione basterà cliccare dal menù sulla voce _"SEGNALA UN PROBLEMA"_:<p>
-![SQLCODE](segnalaproblema.png)<p><br>
+![SEGNALA](segnalaproblema.png)<p><br>
 
 Dopo aver cliccato, si otterrà la pagina per segnalare un problema:<p>
-![SQLCODE](risultatosegnalazione.png)<p><br>
+![RISULTATO](risultatosegnalazione.png)<p><br>
 
 
 # _GITHUB_
 
 Per aprire il browser e visualizzare la pagina di GitHub dove è presente la repository del progetto basterà semplicemente sulla voce _"GitHub"_ in basso a destra.<p>
-![SQLCODE](github.png)<p>
+![GITHUB](github.png)<p>
 
 Dopodichè si aprirà il browser con la relativa pagina.<br>
 
