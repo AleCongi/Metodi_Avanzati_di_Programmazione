@@ -159,6 +159,8 @@ Dopodichè si aprirà il browser predefinito con la relativa pagina.<br>
 
 # <br>_INFORMAZIONI UTILI_
 
+Si ricorda che bisogna __prima__ avviare il main del __MultiServer__ (server/src/server/Multiserver) e successivamente il main di __HelloApplication__ _(gui/src/main/java/com.example.gui/HelloApplication)_<p><br>
+
 Per uscire dall'applicazione basterà premere sulla _X_ in alto a destra.<p>
 
 Questa è una guida realizzata per il progetto _"EP MINER"_ (versione con estensione).

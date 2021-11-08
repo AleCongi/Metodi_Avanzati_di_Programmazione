@@ -110,6 +110,8 @@ Una volta effettuata la scelta, bisognerà inserire i relativi valori quando ric
 
 # <br>_INFORMAZIONI UTILI_
 
+Si ricorda che bisogna __prima__ avviare il main del __MultiServer__ (server/src/server/Multiserver) e successivamente il main di __MainTest__ _(client/src/MainTest)_<p><br>
+
 L'utente ha la possibilità di continuare a utilizzare il programma anche dopo aver effettuato le varie operazioni. Al termine di ogni operazione infatti verrà chiesto se si voglia ripetere. Digitando _"s"_ si avrà la possibilità di continuare con l'uso del sistema.
 
 Per terminare l'applicazione basterà digitare _"n"_ quando viene richiesto se si vuole proseguire<p><br>
