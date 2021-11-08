@@ -9,10 +9,10 @@ public abstract class Attribute implements Serializable {
 
 
     /**
+     * Costruttore dell'attributo.
      * @author Raffaele Di Anna, Alessandro Carella, Alessandro Congedo
      * @param name stringa indicante nome dell'attributo
      * @param index intero indicante l'indice
-     * Costruttore dell'attributo.
      */
     protected Attribute(String name, int index){
         this.name = name;
@@ -20,9 +20,10 @@ public abstract class Attribute implements Serializable {
     }
 
     /**
+     * Restituisce il nome
      * @author Raffaele Di Anna, Alessandro Carella, Alessandro Congedo
      * @return name stringa indicante il nome
-     * Restituisce il nome
+     *
      */
     public String getName() {
         return name;
@@ -30,8 +31,9 @@ public abstract class Attribute implements Serializable {
 
 
     /**
-     * @author Raffaele Di Anna, Alessandro Carella, Alessandro Congedo
      * Restituisce l'indice
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro Congedo
+     *
      */
     public int getIndex() {
         return index;

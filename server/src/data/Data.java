@@ -26,8 +26,9 @@ public class Data {
 
 
 	/**
-	 * @param tableName stringa rappresentante il nome
 	 * costruttore di data
+	 * @param tableName stringa rappresentante il nome
+	 *
 	 */
 	public Data (String tableName) throws DatabaseConnectionException, SQLException, NoValueException {
 		// open db connection
@@ -106,9 +107,10 @@ public class Data {
 
 
 	/**
+	 * restituisce l'oggetto che si trova nella posizione [exampleIndex][attributeSet.get(attributeIndex).getIndex()]
 	 * @param exampleIndex intero indicande l'exampleIndex
 	 * @param attributeIndex intero indicante l'attributeIndex
-	 * restituisce l'oggetto che si trova nella posizione [exampleIndex][attributeSet.get(attributeIndex).getIndex()]
+	 *
 	 */
 	public Object getAttributeValue(int exampleIndex, int attributeIndex){
 		return data[exampleIndex][attributeSet.get(attributeIndex).getIndex()];
@@ -116,8 +118,9 @@ public class Data {
 
 
 	/**
-	 * @param index intero indicante l'indice
 	 * restituisce l'attributo in posizione index di attributeSet
+	 * @param index intero indicante l'indice
+	 *
 	 */
 	public Attribute getAttribute(int index){
 		return attributeSet.get(index);

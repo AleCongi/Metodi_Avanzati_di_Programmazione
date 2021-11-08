@@ -8,10 +8,11 @@ public class EmergingPattern extends FrequentPattern implements Serializable {
 
 
     /**
+     * costruttore dell'EmergingPattern che richiama il super e setta il growrate
      * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
      * @param fp FrequentPattern
      * @param growrate valore reale indicante il growrate
-     * costruttore dell'EmergingPattern che richiama il super e setta il growrate
+     *
      */
     protected EmergingPattern(FrequentPattern fp,float growrate){
         super(fp);
@@ -20,8 +21,9 @@ public class EmergingPattern extends FrequentPattern implements Serializable {
 
 
     /**
-     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
      * restituisce il growrate
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
+     *
      */
     public float getGrowrate() {
         return growrate;
@@ -29,9 +31,10 @@ public class EmergingPattern extends FrequentPattern implements Serializable {
 
 
     /**
+     * imposta il growrate
      * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
      * @param growrate valore reale indicante il growrate
-     * imposta il growrate
+     *
      */
     protected void setGrowrate(float growrate) {
         this.growrate = growrate;

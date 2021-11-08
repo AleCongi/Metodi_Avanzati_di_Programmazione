@@ -18,7 +18,12 @@ public class HelloController4 {
     private Scene scene;
 
 
-
+    /**
+     * metodo che viene eseguito quando si clicca sul bottone "Torna al menu" nell'interfaccia. Permette di tornare al menù iniziale.
+     * @param actionEvent
+     * @throws IOException
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro Congedo
+     */
     public void tornaMenu(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();

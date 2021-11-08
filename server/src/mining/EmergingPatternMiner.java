@@ -13,11 +13,12 @@ public class EmergingPatternMiner implements Iterable<EmergingPattern>, Serializ
     private List<EmergingPattern> epList=new LinkedList<EmergingPattern>();
 
     /**
+     * costruttore dell'EmergingPatternMiner
      * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
      * @param dataBackground oggetto di tipo data
      * @param fpList oggetto di tipo FrequentPatternMiner
      * @param minG valore reale indicante il minG
-     * costruttore dell'EmergingPatternMiner
+     *
      */
     public EmergingPatternMiner(Data dataBackground,FrequentPatternMiner fpList, float minG) throws EmptySetException{
 
@@ -43,10 +44,11 @@ public class EmergingPatternMiner implements Iterable<EmergingPattern>, Serializ
 
 
     /**
+     * restituisce un valore float dopo aver computato il GrowRate
      * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
      * @param dataBackground oggetto di tipo data
      * @param fp oggetto di tipo FrequentPattern
-     * restituisce un valore float dopo aver computato il GrowRate
+     *
      */
     protected float computeGrowRate(Data dataBackground, FrequentPattern fp){
         return fp.getSupport() / fp.computeSupport(dataBackground);
@@ -54,11 +56,12 @@ public class EmergingPatternMiner implements Iterable<EmergingPattern>, Serializ
 
 
     /**
+     * restituisce un nuovo EmergingPattern dopo aver richiamato computeGrowRate e verificato se superiore o uguale al minGR
      * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
      * @param dataBackground oggetto di tipo data
      * @param fp oggetto di tipo FrequentPattern
      * @param minGR valore reale indicante il minGR
-     * restituisce un nuovo EmergingPattern dopo aver richiamato computeGrowRate e verificato se superiore o uguale al minGR
+     *
      */
     protected EmergingPattern computeEmergingPattern(Data dataBackground, FrequentPattern fp, float minGR) throws EmergingPatternException{
         float growRate = computeGrowRate(dataBackground, fp);
@@ -93,9 +96,10 @@ public class EmergingPatternMiner implements Iterable<EmergingPattern>, Serializ
 
 
     /**
+     * permette di salvare l'emerging pattern miner all'interno di un file cosi da permettere la serializzazione
      * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
      * @param nomeFile stringa indicante il nome del file
-     * permette di salvare l'emerging pattern miner all'interno di un file cosi da permettere la serializzazione
+     *
      */
     public void salva(String nomeFile) throws FileNotFoundException, IOException {
 
@@ -108,9 +112,10 @@ public class EmergingPatternMiner implements Iterable<EmergingPattern>, Serializ
     }
 
     /**
+     * permette di caricare da file un emerging pattern miner
      * @author Raffaele Di Anna, Alessandro Carella, Alessandro congedo
      * @param nomeFile stringa indicante il nome del file
-     * permette di caricare da file un emerging pattern miner
+     *
      */
     public static EmergingPatternMiner carica(String nomeFile) throws FileNotFoundException, IOException, ClassNotFoundException {
 
