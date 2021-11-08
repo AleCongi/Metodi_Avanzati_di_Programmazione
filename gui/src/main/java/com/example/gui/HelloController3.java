@@ -28,6 +28,12 @@ public class HelloController3 {
     private String epMiner;
 
 
+    /**
+     * metodo che viene eseguito quando si clicca sul bottone "Torna al menu" nell'interfaccia. Permette di tornare al menù iniziale.
+     * @param actionEvent
+     * @throws IOException
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro Congedo
+     */
     public void tornaMenu(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
@@ -37,6 +43,12 @@ public class HelloController3 {
     }
 
 
+    /**
+     * override del metodo initialize. Eseguito quando viene caricata la 3 schermata. Viene stampato il risultato nei rispettivi label.
+     * @throws IOException
+     * @throws ClassNotFoundException
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro Congedo
+     */
     public void initialize() throws IOException, ClassNotFoundException {
 
        FXMLLoader loader = new FXMLLoader(getClass().getResource("sample2.fxml"));

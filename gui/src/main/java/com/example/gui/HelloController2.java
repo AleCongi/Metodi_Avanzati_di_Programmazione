@@ -43,6 +43,12 @@ public class HelloController2 {
     static String fpMiner;
     static String epMiner;
 
+    /**
+     * metodo che viene eseguito quando si clicca sul bottone "Torna al menu" nell'interfaccia. Permette di tornare al menù iniziale.
+     * @param actionEvent
+     * @throws IOException
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro Congedo
+     */
     public void tornaMenu(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
@@ -51,6 +57,13 @@ public class HelloController2 {
         stage.show();
     }
 
+    /**
+     * Metodo che viene eseguito quando si clicca sul bottone "conferma" nell'interfaccia. Permette di passare alla schermata successiva dopo aver acquisito i dati e avere contattato il server.
+     * @param actionEvent
+     * @throws IOException
+     * @throws ClassNotFoundException
+     * @author Raffaele Di Anna, Alessandro Carella, Alessandro Congedo
+     */
     public void conferma(ActionEvent actionEvent) throws IOException, ClassNotFoundException {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("sample.fxml"));
